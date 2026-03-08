@@ -12,6 +12,8 @@ module dff_async_reset_en (
             q <= 1'b0;
         else if (en)
             q <= d;
+        else
+            q <= q;
         // If en is 0, q holds its value
     end
 
